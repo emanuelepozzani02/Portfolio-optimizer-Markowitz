@@ -8,7 +8,7 @@ import seaborn as sns
 # INITIAL SETTINGS
 # ============================================================
 np.random.seed(42)
-tickers = ["LDO.MI", "A2A.MI", "ENI.MI", "G.MI", "RACE.MI"]
+tickers = ["LDO.MI", "A2A.MI", "ENI.MI", "G.MI"]
 benchmark_ticker = "FTSEMIB.MI"
 rf = 0.02  # Risk-Free Rate (e.g., 2.0%)
 
@@ -251,4 +251,5 @@ for (row, col), cell in table.get_celld().items():
 ax_tab.set_title("PERFORMANCE & RISK DASHBOARD",
                  fontweight='bold', pad=30, fontsize=14)
 plt.tight_layout()
+
 plt.show()
